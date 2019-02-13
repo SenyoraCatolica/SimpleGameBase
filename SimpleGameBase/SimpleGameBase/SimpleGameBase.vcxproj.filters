@@ -1,17 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Archivos de origen">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="SourceCode">
+      <UniqueIdentifier>{4b58b320-2da2-4ebd-a763-1a6975bd91f8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Archivos de encabezado">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="SourceCode\Modules">
+      <UniqueIdentifier>{41460fdb-f812-4c6e-b62d-d50fd2f83dcc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Archivos de recursos">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="SourceCode\Tools">
+      <UniqueIdentifier>{5e9db21f-f5d6-4809-854f-ea7fb2af8807}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SourceCode\Tools\SimpleTimer">
+      <UniqueIdentifier>{73f7e8dd-e0cf-440a-8741-a591b911b3a7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Globals.cpp">
+      <Filter>SourceCode</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleTimer.cpp">
+      <Filter>SourceCode\Tools\SimpleTimer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.h">
+      <Filter>SourceCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Module.h">
+      <Filter>SourceCode\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleTimer.h">
+      <Filter>SourceCode\Tools\SimpleTimer</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
